@@ -13,6 +13,7 @@ gem "mini_racer", platforms: :ruby
 gem "pg", "~> 0.18"
 gem "puma", "~> 3.11"
 gem "react_on_rails"
+gem "skylight"
 gem "webpacker"
 
 group :development, :test do
