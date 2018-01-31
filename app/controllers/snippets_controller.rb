@@ -7,7 +7,12 @@ class SnippetsController < ApplicationController
     @snippets = Snippet.all
   end
 
-  def show; end
+  def show
+    respond_to do |format|
+      format.html
+      format.json { render json: { sid: @snippet.sid, content: @snippet.content } }
+    end
+  end
 
   def new
     @snippet = Snippet.new
@@ -33,6 +38,10 @@ class SnippetsController < ApplicationController
   def destroy
     @snippet.destroy
     redirect_to snippets_path, status: 302
+  end
+
+  def test
+    render :test, layout: "snippets"
   end
 
   private

@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   resources :snippets, path: "/", param: :sid, constraints: { sid: /[a-zA-Z0-9\-]{32,36}/ }
 
   get "todolist", to: "todolist#index"
+  get "snippets", to: "snippets#test"
 end
