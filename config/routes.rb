@@ -4,4 +4,5 @@ Rails.application.routes.draw do
 
   get "todolist", to: "todolist#index"
   get "snippets", to: "snippets#test"
+  get "router", to: "router#index"
 end

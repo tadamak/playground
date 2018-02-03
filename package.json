@@ -10,6 +10,7 @@
     "react-dom": "^16.2.0",
     "react-on-rails": "^10.1.1",
     "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
     "redux": "^3.7.2"
   },
   "devDependencies": {
@@ -19,6 +20,7 @@
     "eslint-config-prettier": "^2.9.0",
     "eslint-import-resolver-webpack": "^0.8.4",
     "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-prettier": "^2.6.0",
     "lint-staged": "^6.1.0",
     "pre-commit": "^1.2.2",
     "prettier": "^1.10.2",
